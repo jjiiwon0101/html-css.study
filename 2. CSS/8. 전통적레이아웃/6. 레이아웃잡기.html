@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+    <style>
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            margin: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 1.4;
+            padding: 10px;
+        }
+
+        .container {
+            border: 3px solid powderblue;
+            width: 800px;
+            margin: 0 auto;
+
+        }
+
+        header {
+            border: 3px solid cornflowerblue;
+
+        }
+
+        nav {
+            border: 3px solid royalblue;
+            width: 150px;
+            height: 200px;
+            float: left;
+        }
+
+        section {
+            width: 400px;
+            border: 3px solid rgb(218, 200, 250);
+            margin-left: 300px;
+            float: right;
+        }
+
+        footer {
+            border: 3px solid blanchedalmond;
+        }
+
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>float 속성을 이용한 레이아웃</h1>
+
+    <div class="container">
+        <header>
+            <h2>header 영역</h2>
+        </header>
+
+        <div class="main-content clearfix">
+            <nav>
+                <h2>nav 영역</h2>
+            </nav>
+
+            <section>
+                <h2>section 영역</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at accumsan dui. Aliquam sed arcu vel
+                    magna molestie condimentum. Nam in porttitor massa, quis porta ipsum. Proin maximus imperdiet eros
+                    ac sollicitudin. Cras tempor risus quis eros laoreet, in aliquam quam tristique. Vestibulum ante
+                    ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam diam enim, auctor a
+                    odio ut, vehicula sodales lectus. Nulla facilisi. Donec sed libero at arcu pulvinar finibus et ut
+                    nisl. Praesent id ex magna. Vivamus ut est a magna sodales fermentum eu sit amet nunc.
+                </p>
+            </section>
+        </div>
+        <footer>
+            <h2>footer 영역</h2>
+        </footer>
+    </div>
+
+</body>
+
+</html>
