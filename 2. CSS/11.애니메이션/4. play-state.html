@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background: tomato;
+            border-radius: 10px;
+            margin: 30px;
+            animation: sizw-up 3s linear infinite balternate;
+            text-align: center;
+            line-height: 100px;
+            /*animation-fill-mode: both;*/
+
+        }
+
+        @keyframes size-up {
+
+            0% {
+                width: 100px;
+
+            }
+            100% {
+                width: 100px;
+
+            }
+            
+        }
+
+        .box::before {
+            content: '재생중';
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .boz:hover {
+            animation-play-state: paused;
+            background: rgb(189, 213, 235);
+        }
+
+        .box:hover::before {
+               content: '중지됨!';
+               color: #000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box"></div>
+    
+</body>
+</html>
